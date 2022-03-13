@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #2b2d42;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.polynomialcalculator.Controller.MainController">
+   <top>
+      <AnchorPane prefHeight="65.0" prefWidth="800.0" style="-fx-background-color: bfc0c0;" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="247.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Polynomial Calculator" textAlignment="CENTER">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="25.0" prefWidth="800.0" style="-fx-background-color: bfc0c0;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="277.0" layoutY="7.0" prefHeight="21.0" prefWidth="246.0" style="-fx-text-fill: black;" text="Polynomial Calculator - Siladi Ciprian © 2022" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <left>
+      <AnchorPane prefHeight="501.0" prefWidth="30.0" style="-fx-background-color: bfc0c0;" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4f5d75;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="100.0" layoutY="68.0" text="First polynomial = " textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="113.0" prefHeight="30.0" prefWidth="211.0" text="Second polynomial = " textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="firstPolynomialTextField" layoutX="305.0" layoutY="68.0" prefHeight="25.0" prefWidth="350.0" promptText="Enter polynomial as: 3x^3+2x^2-4x+6">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <TextField fx:id="secondPolynomialTextField" layoutX="305.0" layoutY="113.0" prefHeight="30.0" prefWidth="350.0" promptText="Enter polynomial as: 3x^3+2x^2-4x+6">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <Button fx:id="additionButton" layoutX="100.0" layoutY="285.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="160.0" style="-fx-background-color: #14213d; -fx-text-fill: white; -fx-cursor: hand; -fx-border-color: white;" text="Addition" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="subtractionButton" layoutX="100.0" layoutY="394.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="160.0" style="-fx-background-color: #14213d; -fx-text-fill: white; -fx-cursor: hand; -fx-border-color: white;" text="Subtraction" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="divisionButton" layoutX="289.0" layoutY="394.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="160.0" style="-fx-background-color: #14213d; -fx-text-fill: white; -fx-cursor: hand; -fx-border-color: white;" text="Division" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="multiplyButton" layoutX="289.0" layoutY="285.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="160.0" style="-fx-background-color: #14213d; -fx-text-fill: white; -fx-cursor: hand; -fx-border-color: white;" text="Multiplication" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="integrationButton" layoutX="480.0" layoutY="394.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="160.0" style="-fx-background-color: #14213d; -fx-text-fill: white; -fx-cursor: hand; -fx-border-color: white;" text="Integration" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="derivativeButton" layoutX="480.0" layoutY="285.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="160.0" style="-fx-background-color: #14213d; -fx-text-fill: white; -fx-cursor: hand; -fx-border-color: white;" text="Derivative" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="label1" layoutX="100.0" layoutY="159.0" text="Result =" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="resultTextField" layoutX="206.0" layoutY="159.0" prefHeight="30.0" prefWidth="450.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+   </center>
+   <right>
+      <AnchorPane prefHeight="501.0" prefWidth="30.0" style="-fx-background-color: bfc0c0;" BorderPane.alignment="CENTER" />
+   </right>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</BorderPane>
